@@ -95,8 +95,6 @@ func sendMessage(line []byte) {
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log.Logger.Printf("[%s]:%s\t%s", thisLogFlag, "上传错误", err.Error())
-	} else {
-		log.Logger.Printf("[%s]:%s\t%s", thisLogFlag, "上传成功", string(body))
 	}
 }
 
